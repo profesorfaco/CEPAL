@@ -32,43 +32,80 @@
         </div>
     </div>
     <script>
-        // Solicitudes de visa por Comuna (2011-2015)
-        // Comuna de Santiago
-        // https://www.bcn.cl/siit/actualidad-territorial/chile-y-la-migracion-los-extranjeros-en-chile
+        // Población extranjera estimada 31 de Diciembre de 2018
+        // https://www.extranjeria.gob.cl/estadisticas-migratorias/
 
         var dataset = [{
-            parent: "Vecinos",
-            id: "Perú",
-            value: 42114
+            continente: "América",
+            pais: "Perú",
+            cantidad: 223923   
         }, {
-            parent: "Otros",
-            id: "Colombia",
-            value: 23994
+            continente: "América",
+            pais: "Colombia",
+            cantidad: 146582 
         }, {
-            parent: "Vecinos",
-            id: "Bolivia",
-            value: 4035
+            continente: "América",
+            pais: "Venezuela",
+            cantidad: 288233
         }, {
-            parent: "Otros",
-            id: "Ecuador",
-            value: 3192
+            continente: "América",
+            pais: "Bolivia",
+            cantidad: 107346   
         }, {
-            parent: "Vecinos",
-            id: "Argentina",
-            value: 2906
+            continente: "América",
+            pais: "Argentina",
+            cantidad: 74713   
         }, {
-            parent: "Otros",
-            id: "Haití",
-            value: 937
-        }];
+            continente: "América",
+            pais: "Haití",
+            cantidad: 179338   
+        }, {
+            continente: "América",
+            pais: "Ecuador",
+            cantidad:  36994      
+        }, {
+            continente: "Europa",
+            pais: "España",
+            cantidad:  21147         
+        }, {
+            continente: "América",
+            pais: "Brasil",
+            cantidad:  18185            
+        }, {
+            continente: "América",
+            pais: "EE.UU.",
+            cantidad:  16337               
+        }, {
+            continente: "América",
+            pais: "EE.UU.",
+            cantidad:  17959                  
+        }, {
+            continente: "Asia",
+            pais: "China",
+            cantidad:  13528                     
+        }, {
+            continente: "América",
+            pais: "Cuba",
+            cantidad:  15837                     
+        }, {
+            continente: "América",
+            pais: "México",
+            cantidad:  8975                     
+        }, {
+            continente: "Europa",
+            pais: "Alemania",
+            cantidad:  8515                     
+        }
+
+        ];
 
         new d3plus.Treemap()
             .data(dataset)
-            .groupBy(["parent", "id"])
+            .groupBy(["continente","pais"])
             .select("#visualizacion")
-            .sum("value")
-            .render();
-    </script>
+            .sum("cantidad")
+            .render()
+        </script>
 </body>
 
 </html>

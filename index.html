@@ -35,12 +35,12 @@
     </div>
 
     <script>
-        var miMapa = L.map('visualizacion').setView([-33.4, -70.6], 10);
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-            maxZoom: 19,
-            id: 'mapbox.streets'
-        }).addTo(miMapa);
-        L.marker([-33.40193, -70.600265]).addTo(miMapa).bindPopup('<p><strong>CEPAL</strong><br />Comisión Económica para América Latina y el Caribe</p>');
+
+       // Lat -33.4726900 (Ecuador, paralelo) / Lon -70.6472400 (Greenwich, meridiano)
+
+        var miMapa = L.map('visualizacion').setView([-33.47269, -70.64724], 3);
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { maxZoom: 19, id: 'mapbox.streets' }).addTo(miMapa);
+        L.marker([-33.40193, -70.600265]).addTo(miMapa).bindPopup('<p>Aquí está la CEPAL</p>');
     </script>
 
 </body>

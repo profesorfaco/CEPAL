@@ -7,6 +7,8 @@
 	position: fixed;
 	right:1rem;
 	top:1rem;
+	font-size: 0.8rem;
+	z-index:99999;
 }
 
 #visualizacion{
