@@ -26,42 +26,41 @@
                 <h3>Data-Driven Documents</h3>
                 <p><a href="https://github.com/d3/d3/wiki/Tutorials" target="_blank">Tutorials</a></p>
                 <div id="visualizacion"></div>
+                <p class="mt-3"><strong>Ejercicio</strong> modifiquemos la variable de nombre <em>dataset</em>, para que se dibujen más círculos.</p>
             </div>
         </div>
     </div>
 
     <script>
-        var dataset = [10, 2, 15, 7, 12];
+        var dataset = [20, 10];
 
-        var cuantos = dataset.length;
+        var porcion = 100 / (dataset.length + 1);
 
-        var porcion = 100 / (cuantos + 1);
+        console.log(porcion);
 
-        console.log(cuantos);
+        var miSVG = d3.select("#visualizacion").append('svg').attr('width', '100%').attr('height','60vh').attr('viewBox','0 0 100 100').style('background', 'silver');
 
-        var svg = d3.select("#visualizacion").append('svg').attr('viewBox', '0 0 100 50').style('background', 'silver');
-
-        svg.selectAll('circle').data(dataset).enter().append('circle')
+        miSVG.selectAll('circle').data(dataset).enter().append('circle')
             .attr('r', function(d, i) {
                 return d
             })
             .attr('cx', function(d, i) {
                 return porcion * (i + 1)
             })
-            .attr('cy', 25)
+            .attr('cy', 50)
             .attr('fill', '#fff')
             .attr('opacity', .75);
 
-        svg.selectAll('text').data(dataset).enter().append('text')
+        miSVG.selectAll('text').data(dataset).enter().append('text')
             .text(function(d, i) {
                 return d
             })
             .attr('x', function(d, i) {
                 return porcion * (i + 1)
             })
-            .attr('y', 25.5)
+            .attr('y', 50.5)
             .attr('text-anchor', 'middle')
-            .style('font-size', 1.5)
+            .style('font-size', 3)
     </script>
 </body>
 

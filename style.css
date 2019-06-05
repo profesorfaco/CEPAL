@@ -15,9 +15,3 @@
 	background:#eee;
 }
 
-@media screen and (orientation:portrait){
-	#visualizacion{
-		height:30vh;
-	}	
-}
-
