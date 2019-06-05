@@ -26,8 +26,9 @@
             <div class="col-12">
                 <h1 class="display-4">C3.js</h1>
                 <h3>D3-based reusable chart library</h3>
-                <p><strong>info</strong> <a href="https://c3js.org/gettingstarted.html">getting started</a>, <a href="https://c3js.org/examples.html">examples</a>, <a href="https://c3js.org/reference.html">reference</a></p>
+                <p><strong>+ info</strong> <a href="https://c3js.org/reference.html">reference</a>, <a href="https://c3js.org/examples.html">examples</a></p>
                 <div id="visualizacion"></div>
+                <p class="mt-2"><strong>Ejercicio</strong> modifiquemos los datos dentro del arreglo <em>colums</em>, para utilizar <a href="https://datavizcatalogue.com/ES/metodos/grafica_de_linea.html">el mismo gráfico</a> en la visualización de otro asunto.</p>
             </div>
         </div>
     </div>
@@ -37,8 +38,8 @@
             bindto: '#visualizacion',
             data: {
                 columns: [
-                    ['Primer dato', 30, 200, 100, 400, 150, 250],
-                    ['Sesgundo dato', 50, 20, 10, 40, 15, 25]
+                    ['Precio del Dólar', 662.27, 663.91, 668.19,672.83, 676.21,673.86,677.67,678.71, 683.31, 678.68,681.09,683.49,684.51, 686.43, 685.67, 693.04,692.33, 692.62,692.79,696.61, 697.23, 696.7,698.03,  694.84,696.46, 703.48, 708.2, 707.86, 709.8,704.59,696.78], 
+                    ['Precio del Euro',743.62, 747.48, 749.18, 750.51, 752.77, 751.66, 757.77, 761.4, 763.73, 759.74, 763.13, 763.93, 765.93, 770.4, 770.24, 778.52, 776.42, 776.04, 774.15, 777.55, 778.68, 777.48, 780.44, 778.71, 779.3, 785.75, 788.64, 788.18, 792.63, 792.21, 784.49]
                 ]
             }
         });
