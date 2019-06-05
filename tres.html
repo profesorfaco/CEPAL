@@ -32,11 +32,14 @@
         </div>
     </div>
     <script>
-        // Población extranjera estimada 31 de Diciembre de 2018
-        // https://www.extranjeria.gob.cl/estadisticas-migratorias/
 
-        var dataset = [{
-            continente: "América",
+    	// Datos disponibles en https://www.extranjeria.gob.cl/estadisticas-migratorias/
+        // Estimación de personas extranjeras residentes en Chile (INE-DEM)
+        // Estimación de Extranjeros Residentes en Chile 2018 (documento XLS)
+
+        var dataset = [
+        {
+        	continente: "América",
             pais: "Perú",
             cantidad: 223923   
         }, {
@@ -77,10 +80,10 @@
             cantidad:  16337               
         }, {
             continente: "América",
-            pais: "EE.UU.",
+            pais: "República Dominicana",
             cantidad:  17959                  
         }, {
-            continente: "Asia",
+            continente: "Otro",
             pais: "China",
             cantidad:  13528                     
         }, {
@@ -95,8 +98,15 @@
             continente: "Europa",
             pais: "Alemania",
             cantidad:  8515                     
+        }, {
+            continente: "Otro",
+            pais: "Otro país",
+            cantidad:  69959                     
+        }, {
+            continente: "Otro",
+            pais: "País no declarado",
+            cantidad:  3656                     
         }
-
         ];
 
         new d3plus.Treemap()
