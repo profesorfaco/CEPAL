@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>D3plus | Data visualization made easy</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3plus.org/js/d3plus-hierarchy.v0.8.full.min.js"></script>
+</head>
+
+<body>
+
+    <select id="menu" onchange="location=this.value;">
+        <option value="index.html">Leaflet</option>
+        <option value="dos.html">D3.js</option>
+        <option value="tres.html" selected>D3plus</option>
+        <option value="cuatro.html">C3.js</option>
+    </select>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12">
+                <h1 class="display-4">D3plus</h1>
+                <h3>Data visualization made easy</h3>
+                <p><a href="https://d3plus.org/examples/">examples</a></p>
+                <div id="visualizacion"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Solicitudes de visa por Comuna (2011-2015)
+        // Comuna de Santiago
+        // https://www.bcn.cl/siit/actualidad-territorial/chile-y-la-migracion-los-extranjeros-en-chile
+
+        var data = [{
+            parent: "Países vecinos",
+            id: "Perú",
+            value: 42114
+        }, {
+            parent: "Otros países",
+            id: "Colombia",
+            value: 23994
+        }, {
+            parent: "Países vecinos",
+            id: "Bolivia",
+            value: 4035
+        }, {
+            parent: "Otros países",
+            id: "Ecuador",
+            value: 3192
+        }, {
+            parent: "Países vecinos",
+            id: "Argentina",
+            value: 2906
+        }, {
+            parent: "Otros países",
+            id: "Haití",
+            value: 937
+        }];
+
+        new d3plus.Treemap()
+            .data(data)
+            .groupBy(["parent", "id"])
+            .select("#visualizacion")
+            .sum("value")
+            .render();
+    </script>
+</body>
+
+</html>

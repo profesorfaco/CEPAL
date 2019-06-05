@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>D3.js | Data-Driven Documents</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+
+    <select id="menu" onchange="location=this.value;">
+        <option value="index.html">Leaflet</option>
+        <option value="dos.html" selected>D3.js</option>
+        <option value="tres.html">D3plus</option>
+        <option value="cuatro.html">C3.js</option>
+    </select>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12">
+                <h1 class="display-4">D3.js</h1>
+                <h3>Data-Driven Documents</h3>
+                <p><a href="https://github.com/d3/d3/wiki/Tutorials" target="_blank">Tutorials</a></p>
+                <div id="visualizacion"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var dataset = [10, 2, 15, 7, 12];
+
+        var cuantos = dataset.length;
+
+        var porcion = 100 / (cuantos + 1);
+
+        console.log(cuantos);
+
+        var svg = d3.select("#visualizacion").append('svg').attr('viewBox', '0 0 100 50').style('background', 'silver');
+
+        svg.selectAll('circle').data(dataset).enter().append('circle')
+            .attr('r', function(d, i) {
+                return d
+            })
+            .attr('cx', function(d, i) {
+                return porcion * (i + 1)
+            })
+            .attr('cy', 25)
+            .attr('fill', '#fff')
+            .attr('opacity', .75);
+
+        svg.selectAll('text').data(dataset).enter().append('text')
+            .text(function(d, i) {
+                return d
+            })
+            .attr('x', function(d, i) {
+                return porcion * (i + 1)
+            })
+            .attr('y', 25.5)
+            .attr('text-anchor', 'middle')
+            .style('font-size', 1.5)
+    </script>
+</body>
+
+</html>
