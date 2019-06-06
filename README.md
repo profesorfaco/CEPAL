@@ -1,4 +1,4 @@
-# CEPAL | Visualización de Datos
+# CEPAL | visualización de datos
 
 #### Jueves 6 de junio, 2019
 
