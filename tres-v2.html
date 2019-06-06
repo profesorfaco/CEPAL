@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>D3plus | Data visualization made easy</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3plus.org/js/d3plus-plot.v0.8.full.min.js"></script>
+</head>
+
+<body>
+
+    <button id="menu" onclick="location.href='tres.html'">&larr; Volver</button>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12">
+                <h1>D3plus</h1>
+                <h4>Data visualization made easy</h4>
+                <p><a href="https://d3plus.org/docs/">documentation</a>, <a href="https://d3plus.org/examples/">examples</a></p>
+                <div id="visualizacion"></div>
+                <p class="mt-4">* en la visualización de este asunto, qué funciona mejor: un <a href="https://datavizcatalogue.com/ES/metodos/grafico_de_barras_apiladas.html" target="_blank">gráfico de barras apiladas</a> o un <a href="https://datavizcatalogue.com/ES/metodos/grafica_de_barras_de_conjunto_multiple.html" target="_blank">gráfico de barras de conjunto múltiple</a>.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var dataset = [{
+            id: "mujer",
+            x: "Argentina",
+            y: 37106
+        }, {
+            id: "hombre",
+            x: "Argentina",
+            y: 37607
+        }, {
+            id: "mujer",
+            x: "Bolivia",
+            y: 58517
+        }, {
+            id: "hombre",
+            x: "Bolivia",
+            y: 48830
+        }, {
+            id: "mujer",
+            x: "Colombia",
+            y: 77243
+        }, {
+            id: "hombre",
+            x: "Colombia",
+            y: 69339
+        }, {
+            id: "mujer",
+            x: "Haití",
+            y: 63825
+        }, {
+            id: "hombre",
+            x: "Haití",
+            y: 115512
+        }, {
+            id: "mujer",
+            x: "Venezuela",
+            y: 138689
+        }, {
+            id: "hombre",
+            x: "Venezuela",
+            y: 149544
+        }, {
+            id: "mujer",
+            x: "Perú",
+            y: 107735
+        }, {
+            id: "hombre",
+            x: "Perú",
+            y: 116188
+        }];
+
+        new d3plus.BarChart()
+            .data(dataset)
+            .select("#visualizacion")
+            //.stacked(true)
+            .render();
+    </script>
+</body>
+
+</html>

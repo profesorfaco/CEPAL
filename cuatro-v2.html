@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>C3.js | D3-based reusable chart library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.1/c3.min.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.1/c3.min.js"></script>
+</head>
+
+<body>
+
+    <button id="menu" onclick="location.href='cuatro.html'">&larr; Volver</button>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12">
+                <h1>C3.js</h1>
+                <h4>D3-based reusable chart library</h4>
+                <p><a href="https://c3js.org/reference.html">reference</a>, <a href="https://c3js.org/examples.html">examples</a></p>
+                <div id="visualizacion"></div>
+                <p class="mt-4">* Consultemos por otros datos a la <a href="https://mindicador.cl/" target="_blank">API de mindicador.cl</a>, y aprovechemos <a href="https://datavizcatalogue.com/ES/metodos/grafica_de_linea.html">la misma gráfica de líneas</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Estoy yendo por datos actualizados, consultando a la API https://mindicador.cl/ 
+
+        Promise.all([d3.json("https://mindicador.cl/api/dolar"), d3.json("https://mindicador.cl/api/euro")]).then(function(datos) {
+
+            var dolares = [],
+                euros = [];
+
+            datos[0].serie.forEach(function(d) {
+                dolares.push(d.valor)
+            });
+
+            datos[1].serie.forEach(function(d) {
+                euros.push(d.valor)
+            });
+
+            var chart = c3.generate({
+                bindto: '#visualizacion',
+                data: {
+                    columns: [
+                        ['Variación de 30 días en el precio del Euro'].concat(euros.reverse()), ['Variación de 30 días en el precio del Dólar'].concat(dolares.reverse())
+                    ]
+                }
+            });
+
+        })
+    </script>
+
+</body>
+
+</html>

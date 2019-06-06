@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>D3plus | Data visualization made easy</title>
+    <title>D3plus | Data visualization made easy</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://d3plus.org/js/d3plus-hierarchy.v0.8.full.min.js"></script>
 </head>
@@ -27,25 +27,24 @@
                 <h4>Data visualization made easy</h4>
                 <p><a href="https://d3plus.org/docs/">documentation</a>, <a href="https://d3plus.org/examples/">examples</a></p>
                 <div id="visualizacion"></div>
-                <p class="mt-2">* modifiquemos la variable de nombre <em>dataset</em>, para utilizar <a href="https://datavizcatalogue.com/ES/metodos/mapa_de_arbol.html">el mismo gráfico</a> en la visualización de otro asunto.</p>
+                <p class="mt-4">* podemos modificar datos para utilizar <a href="https://datavizcatalogue.com/ES/metodos/mapa_de_arbol.html" target="_blank">el mismo gráfico</a> en la visualización de otro asunto, o <a href="tres-v2.html">dar un paso más</a>.</p>
+
             </div>
         </div>
     </div>
     <script>
-
-    	// Datos disponibles en https://www.extranjeria.gob.cl/estadisticas-migratorias/
+        // Datos disponibles en https://www.extranjeria.gob.cl/estadisticas-migratorias/
         // Estimación de personas extranjeras residentes en Chile (INE-DEM)
         // Estimación de Extranjeros Residentes en Chile 2018 (documento XLS)
 
-        var dataset = [
-        {
-        	continente: "América",
+        var dataset = [{
+            continente: "América",
             pais: "Perú",
-            cantidad: 223923   
+            cantidad: 223923
         }, {
             continente: "América",
             pais: "Colombia",
-            cantidad: 146582 
+            cantidad: 146582
         }, {
             continente: "América",
             pais: "Venezuela",
@@ -53,69 +52,68 @@
         }, {
             continente: "América",
             pais: "Bolivia",
-            cantidad: 107346   
+            cantidad: 107346
         }, {
             continente: "América",
             pais: "Argentina",
-            cantidad: 74713   
+            cantidad: 74713
         }, {
             continente: "América",
             pais: "Haití",
-            cantidad: 179338   
+            cantidad: 179338
         }, {
             continente: "América",
             pais: "Ecuador",
-            cantidad:  36994      
+            cantidad: 36994
         }, {
             continente: "Europa",
             pais: "España",
-            cantidad:  21147         
+            cantidad: 21147
         }, {
             continente: "América",
             pais: "Brasil",
-            cantidad:  18185            
+            cantidad: 18185
         }, {
             continente: "América",
             pais: "EE.UU.",
-            cantidad:  16337               
+            cantidad: 16337
         }, {
             continente: "América",
             pais: "República Dominicana",
-            cantidad:  17959                  
+            cantidad: 17959
         }, {
             continente: "Otro",
             pais: "China",
-            cantidad:  13528                     
+            cantidad: 13528
         }, {
             continente: "América",
             pais: "Cuba",
-            cantidad:  15837                     
+            cantidad: 15837
         }, {
             continente: "América",
             pais: "México",
-            cantidad:  8975                     
+            cantidad: 8975
         }, {
             continente: "Europa",
             pais: "Alemania",
-            cantidad:  8515                     
+            cantidad: 8515
         }, {
             continente: "Otro",
             pais: "Otro país",
-            cantidad:  69959                     
+            cantidad: 69959
         }, {
             continente: "Otro",
             pais: "País no declarado",
-            cantidad:  3656                     
-        }
-        ];
+            cantidad: 3656
+        }];
 
         new d3plus.Treemap()
             .data(dataset)
-            .groupBy(["continente","pais"])
+            .groupBy(["continente", "pais"])
             .select("#visualizacion")
             .sum("cantidad")
             .render()
-        </script>
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Leaflet | A JavaScript library for interactive maps</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+
+</head>
+
+<body>
+
+    <button id="menu" onclick="location.href='index.html'">&larr; Volver</button>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12">
+                <h1>Leaflet</h1>
+                <h4>A JavaScript library for interactive maps</h4>
+                <p><a href="https://leafletjs.com/reference-versions.html" target="_blank">reference</a>, <a href="https://leafletjs.com/examples.html">tutorials</a></p>
+                <div id="visualizacion"></div>
+                <p class="mt-4">* Agreguemos más datos sobre la tasa de incidencia de pobreza, para incluir la mayor parte de América Latina y el Caribe.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tasa de incidencia de la pobreza, sobre la base de $1,90 por día
+        // Solo se consideran países sudamericanos con dato de año 2017
+        // Fuente: https://datos.bancomundial.org/indicador/SI.POV.DDAY
+
+        var dataset = [{
+            pais: "Argentina",
+            lat: -34,
+            lon: -64,
+            tasa: 0.4
+        }, {
+            pais: "Bolivia",
+            lat: -16.5,
+            lon: -64.5,
+            tasa: 5.8
+        }, {
+            pais: "Brasil",
+            lat: -9.5,
+            lon: -52,
+            tasa: 4.8
+        }, {
+            pais: "Chile",
+            lat: -35.5,
+            lon: -72,
+            tasa: 0.7
+        }, {
+            pais: "Colombia",
+            lat: 4,
+            lon: -73,
+            tasa: 3.9
+        }, {
+            pais: "Ecuador",
+            lat: -1.5,
+            lon: -78.5,
+            tasa: 3.2
+        }, {
+            pais: "Paraguay",
+            lat: -23.5,
+            lon: -58,
+            tasa: 1.2
+        }, {
+            pais: "Perú",
+            lat: -10.25,
+            lon: -75.25,
+            tasa: 3.4
+        }, {
+            pais: "Uruguay",
+            lat: -32.25,
+            lon: -56,
+            tasa: 0.1
+        }]
+
+        var miMapa = L.map('visualizacion').setView([-19, -60], 3);
+
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 19,
+            id: 'mapbox.streets'
+        }).addTo(miMapa);
+
+        var diametro;
+
+        dataset.forEach(function(p) {
+
+            if (p.tasa < 1) {
+                diametro = 100000
+            } else {
+                diametro = 100000 * p.tasa
+            }
+
+            L.circle([p.lat, p.lon], diametro, {
+                stroke: false,
+                fillColor: '#f00',
+                fillOpacity: 0.6
+            }).addTo(miMapa).bindTooltip(p.tasa + "%");
+
+        })
+    </script>
+
+</body>
+
+</html>
