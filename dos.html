@@ -26,7 +26,7 @@
                 <h4>Data-Driven Documents</h4>
                 <p><a href="https://github.com/d3/d3/blob/master/API.md">reference</a>, <a href="https://github.com/d3/d3/wiki/Tutorials" target="_blank">tutorials</a>, <a href="https://www.d3-graph-gallery.com/">D3.js Graph Gallery</a></p>
                 <div id="visualizacion"></div>
-                <p class="mt-4">* modifiquemos la variable de nombre <em>dataset</em>, para que se sumen círculos con distintos tamaños.</p>
+                <p class="mt-4">* podemos sumar círculos con distintos tamaños y/o <a href="dos-v2.html">dar un paso atrás</a>, para una mejor comprensión de la biblioteca.</p>
             </div>
             <footer class="small col-12 mt-5 pt-2 border-top"><p><a href="https://github.com/profesorfaco/cepal">CEPAL | visualización de datos</a> <span class="float-right">junio 2019</span></p></footer>
         </div>
@@ -39,7 +39,7 @@
 
         console.log(porcion);
 
-        var miSVG = d3.select("#visualizacion").append('svg').attr('width', '100%').attr('height', '60vh').attr('viewBox', '0 0 100 100').style('background', '#ccc');
+        var miSVG = d3.select("#visualizacion").append('svg').attr('width', '100%').attr('height', '70vh').attr('viewBox', '0 0 100 100').style('background', '#ccc');
 
         miSVG.selectAll('circle').data(dataset).enter().append('circle')
             .attr('r', function(d, i) {

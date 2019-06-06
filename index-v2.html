@@ -15,7 +15,7 @@
 
 <body>
 
-    <button id="menu" onclick="location.href='index.html'">&larr; Volver</button>
+    <button id="menu" onclick="location.href='index.html'">&larr; Leaflet</button>
 
     <div class="container">
         <div class="row py-5">
@@ -24,7 +24,7 @@
                 <h4>A JavaScript library for interactive maps</h4>
                 <p><a href="https://leafletjs.com/reference-versions.html" target="_blank">reference</a>, <a href="https://leafletjs.com/examples.html">tutorials</a></p>
                 <div id="visualizacion"></div>
-                <p class="mt-4">* Agreguemos más datos sobre la tasa de incidencia de pobreza, para incluir la mayor parte de América Latina y el Caribe.</p>
+                <p class="mt-4">* Agreguemos más datos sobre la tasa de incidencia de pobreza, para incluir una mayor parte de América Latina y el Caribe.</p>
             </div>
             <footer class="small col-12 mt-5 pt-2 border-top"><p><a href="https://github.com/profesorfaco/cepal">CEPAL | visualización de datos</a> <span class="float-right">junio 2019</span></p></footer>
         </div>
@@ -89,17 +89,17 @@
             id: 'mapbox.streets'
         }).addTo(miMapa);
 
-        var diametro;
+        var d;
 
         dataset.forEach(function(p) {
 
             if (p.tasa < 1) {
-                diametro = 100000
+                d = 50000 + (p.tasa*50000)
             } else {
-                diametro = 100000 * p.tasa
+                d = 100000 * p.tasa
             }
 
-            L.circle([p.lat, p.lon], diametro, {
+            L.circle([p.lat, p.lon], d, {
                 stroke: false,
                 fillColor: '#f00',
                 fillOpacity: 0.6
