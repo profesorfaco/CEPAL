@@ -28,6 +28,7 @@
                 <div id="visualizacion"></div>
                 <p class="mt-4">* modifiquemos la variable de nombre <em>dataset</em>, para que se sumen círculos con distintos tamaños.</p>
             </div>
+            <footer class="small col-12 mt-5 pt-2 border-top"><p><a href="https://github.com/profesorfaco/cepal">CEPAL | visualización de datos</a> <span class="float-right">junio 2019</span></p></footer>
         </div>
     </div>
 
@@ -38,7 +39,7 @@
 
         console.log(porcion);
 
-        var miSVG = d3.select("#visualizacion").append('svg').attr('width', '100%').attr('height', '60vh').attr('viewBox', '0 0 100 100').style('background', 'silver');
+        var miSVG = d3.select("#visualizacion").append('svg').attr('width', '100%').attr('height', '60vh').attr('viewBox', '0 0 100 100').style('background', '#ccc');
 
         miSVG.selectAll('circle').data(dataset).enter().append('circle')
             .attr('r', function(d, i) {
