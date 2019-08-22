@@ -9,11 +9,11 @@
 
 De modo práctico, vamos a revisar:
 
-- herramientas en línea para prototipar visualizaciones de datos (9.40 a 10.20 hrs.);
+- herramientas en línea para prototipar visualizaciones de datos (10.00 a 10.45 hrs.);
 
-- referencias en línea para definir el tipo de visualización de datos pertinente según su función comunicacional (10.20 a 10.50 hrs.); y
+- referencias en línea para definir el tipo de visualización de datos pertinente según su función comunicacional (10.45 a 11.20 hrs.); y
 
-- bibliotecas de JavaScript para la visualización de datos, con énfasis en D3.js (11.00 a 12.50 hrs.)
+- bibliotecas de JavaScript para la visualización de datos, con énfasis en D3.js (11.40 a 12.50 hrs.)
 
 - - - - - - - - -
 
@@ -81,7 +81,7 @@ Podemos cambiar la representación de esta misma página escribiendo lo siguient
 
 `document.write("bye!");`
 
-**Para asomarse a la consola correspondiente:**
+* Para asomarse a la consola correspondiente:
 
 Si usas Chrome en PC, presiona Ctrl + Shift + J. Si estás usando el mismo navegador en Mac, presiona Cmd + Alt + J
 
@@ -89,13 +89,13 @@ Si usas Firefox en PC, presiona Ctrl + Shift + K. Si estás usando el mismo nave
 
 Si usas Safari, presiona: Cmd + Alt + C (aunque no es recomendable seguir trabajando con este navegador web, favor descarga uno de los anteriores)
 
-### Mapas
+### Una biblioteca de JavaScript para trabajar con mapas
 
 https://leafletjs.com/
 
 Leaflet es la biblioteca de JavaScript que permite programar mapas interactivos.
 
-### Data Driven Documents
+### Una biblioteca de JavaScript producir, a partir de datos, visualizaciones para la web
 
 https://d3js.org/
 
