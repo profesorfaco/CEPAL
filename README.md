@@ -18,33 +18,33 @@ De modo práctico, vamos a presentar:
 
 - bibliotecas de JavaScript para la visualización de datos, con énfasis en D3.js (11.00 a 12.50 hrs.)
 
-## Herramientas en línea para prototipar visualizaciones de datos (9.00 a 9.50 hrs.)
+## Herramientas en línea para prototipar visualizaciones de datos
 
-#### DATAMATIC
+### DATAMATIC
 https://datamatic.io/
 
 Un servicio que permite elegir una plantilla de visualización de datos, para luego personalizarla y, posteriormente, publicarla. Se necesita una cuenta “GMAIL” para poder utilizarla. Se propone seleccionar una plantilla y modificarla con datos reales, sobre algún asunto de interés.
 
-#### RAWGraphs
+### RAWGraphs
 https://rawgraphs.io/learning/ 
 
 Un servicio que facilita la representación visual de datos complejos, ofreciendo un espacio para ingresar datos, distintas opciones de gráficos y un espacio de configuración dependiente de la opción seleccionada. Se propone realizar un “Alluvial diagram” con datos sobre las Visas otorgadas período 2018, datos publicados por el Departamento de Extranjería y Migración.
 
-#### WORD CLOUD GENERATOR 
+### WORD CLOUD GENERATOR 
 https://www.jasondavies.com/wordcloud/ 
 
 Un servicio que permite generar una nube de palabras desde un texto. Se propone tomar la segunda Cuenta Pública de Piñera (2019), copiarlo y pegarlo en el espacio para texto de https://www.jasondavies.com/wordcloud/  y visualizar las 250 palabras más utilizadas.
 
-## Referencias en línea para definir el tipo de visualización de datos pertinente según su función comunicacional (09.50 a 10.40 hrs.)
+## Referencias en línea para definir el tipo de visualización de datos pertinente según su función comunicacional
 
-#### FROM DATA TO VIZ
+### FROM DATA TO VIZ
 https://www.data-to-viz.com/
 
 Este proyecto presenta, en forma de un árbol de decisión, un conjunto de visualizaciones que resultan más apropiadas al formato de datos de entrada.
 
 Este proyecto es desarrollado por dos franceses. El analista de datos Yan Holtz y el diseñador Conor Healy.
 
-#### CATÁLOGO DE DATAVIZ
+### CATÁLOGO DE DATAVIZ
 https://datavizcatalogue.com/ES/
 
 Este es un proyecto doble, con una biblioteca de diferentes técnicas de visualización y un blog, ambos desarrollados por Severino Ribecca; su biblioteca puede explorarse de dos maneras:
@@ -53,8 +53,7 @@ Este es un proyecto doble, con una biblioteca de diferentes técnicas de visuali
 
 - a través de listas, que agrupan: Gráficos/Tramas, Diagramas, Tablas, Varios, Mapas/Geográficos
 
-#### VISUAL LITERACY
-
+### VISUAL LITERACY
 http://www.visual-literacy.org/
 
 En la sección Books & Maps, es posible encontrar:
@@ -69,9 +68,9 @@ En grupos, imaginen el (auto)encargo de una visualización de datos. Pónganle u
 
 Contando con una decisión informada y un boceto (como un acuerdo en papel; lo mismo a la vista de todos), podemos dar un primer paso en la escalera hacia la excelencia visual, la que nos llevará hasta una visualización de datos que podría llamar la atención, motivar hacia la comprensión y resultar (positivamente) memorable.
 
-## Bibliotecas de JavaScript para la visualización de datos, con énfasis en D3.js (11.00 a 12.50 hrs.)
+## Bibliotecas de JavaScript para la visualización de datos, con énfasis en D3.js
 
-#### JavaScript
+### JavaScript
 
 JavaScript es un lenguaje de programación que se utiliza principalmente para crear páginas web dinámicas: páginas que se modifican como respuesta a nuestra interacción de ellas.
 
@@ -89,17 +88,17 @@ Si estás usando Firefox en PC, presiona Ctrl + Shift + K. Si estás usando el m
 
 Si estás usando Safari, presiona: Cmd + Alt + C (aunque no es recomendable seguir trabajando con este navegador web, descarga uno de los anteriores)
 
-#### Mapas
+### Mapas
 https://leafletjs.com/
 
 Leaflet es la biblioteca de JavaScript que permite programar mapas interactivos.
 
-#### Data Driven Documents
+### Data Driven Documents
 https://d3js.org/
 
 D3 es una biblioteca de JavaScript que permite visualizar datos utilizando estándares web.
 
-#### Simplificando D3.js
+### Simplificando D3.js
 https://d3plus.org/ · https://c3js.org/
 
 D3plus y C3 son bibliotecas de JavaScript que extienden D3.js, permitiendo la creación rápida de gráficos.
