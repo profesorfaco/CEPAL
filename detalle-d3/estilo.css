@@ -1,0 +1,39 @@
+*{ margin:0; padding:0;}
+
+body{padding:1rem}
+
+nav{clear:both; padding:1rem 0;}
+
+svg{background:silver;}
+
+/*
+	aprovecho de mostrarles algunas cosas 
+	que se pueden hacer con los vínculos 
+*/
+
+/* selecciona vínculos con atributo "title" */
+a[title] {
+  color: purple;
+}
+
+/* selecciona vínculos con referencia de hipertexto "https://misitio.tk" */
+a[href="https://misitio.tk"] {
+  color: green;
+}
+
+/* selecciona vínculos con referencia de hipertexto que contiene "mi" */
+a[href*="mi"] {
+  font-size: 2em;
+}
+
+/* selecciona vínculos con referencia que termine en ".pdf" */
+a[href$=".pdf"] {
+  font-weight:bold;
+  text-decoration:none;
+}
+
+/* Pregunta: ¿Qué hace esto? */
+
+a[href$=".pdf"]::before {
+  content: "↓ ";
+}
