@@ -2,13 +2,11 @@
 
 #### Jueves 22 de agosto, 2019
 
-### Felipe Alberto Cortez Orellana → FACO
-**profesor@faco.cl
-http://profesor.faco.cl/**
+| Felipe Cortez            |  Ricardo Vega           |
+|:-------------------------|:------------------------|
+| profesor@faco.cl         | rivegam@uc.cl           |
+| http://profesor.faco.cl/ | http://www.ricardov.cl/ | 
 
-### Ricardo Vega
-**rivegam@uc.cl
-http://www.ricardov.cl/**
 
 De modo práctico, vamos a presentar:
 
