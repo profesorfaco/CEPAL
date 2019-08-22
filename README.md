@@ -7,13 +7,15 @@
 
 **Jueves 22 de agosto, 2019**
 
-De modo práctico, vamos a presentar:
+De modo práctico, vamos a revisar:
 
 - herramientas en línea para prototipar visualizaciones de datos (9.00 a 9.50 hrs.);
 
 - referencias en línea para definir el tipo de visualización de datos pertinente según su función comunicacional (09.50 a 10.40 hrs.); y
 
 - bibliotecas de JavaScript para la visualización de datos, con énfasis en D3.js (11.00 a 12.50 hrs.)
+
+- - - - - - - - -
 
 ## Herramientas en línea para prototipar visualizaciones de datos
 
@@ -31,6 +33,8 @@ Un servicio que facilita la representación visual de datos complejos, ofreciend
 https://www.jasondavies.com/wordcloud/ 
 
 Un servicio que permite generar una nube de palabras desde un texto. Se propone tomar la segunda Cuenta Pública de Piñera (2019), copiarlo y pegarlo en el espacio para texto de https://www.jasondavies.com/wordcloud/  y visualizar las 250 palabras más utilizadas.
+
+- - - - - - - - -
 
 ## Referencias en línea para definir el tipo de visualización de datos pertinente según su función comunicacional
 
@@ -64,6 +68,8 @@ Consultando esta tabla periódica (Lengler & Eppler, 2007), podrán aprender, po
 En grupos, imaginen el (auto)encargo de una visualización de datos. Pónganle un título a este (auto)encargo. Luego seleccionen el tipo o método de visualización más adecuado para el caso imaginado, y justifiquen la selección con la información ofrecida en la tabla periódica y en el catálogo de visualización de datos. Para presentarlo, hagan un boceto rápido (muy rápido):
 
 Contando con una decisión informada y un boceto (como un acuerdo en papel; lo mismo a la vista de todos), podemos dar un primer paso en la escalera hacia la excelencia visual, la que nos llevará hasta una visualización de datos que podría llamar la atención, motivar hacia la comprensión y resultar (positivamente) memorable.
+
+- - - - - - - - -
 
 ## Bibliotecas de JavaScript para la visualización de datos, con énfasis en D3.js
 
