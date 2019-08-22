@@ -27,12 +27,12 @@ Un servicio que permite elegir una plantilla de visualización de datos, para lu
 ### RAWGraphs
 https://rawgraphs.io/learning/ 
 
-Un servicio que facilita la representación visual de datos complejos, ofreciendo un espacio para ingresar datos, distintas opciones de gráficos y un espacio de configuración dependiente de la opción seleccionada. Se propone realizar un “Alluvial diagram” con datos sobre las Visas otorgadas período 2018, datos publicados por el Departamento de Extranjería y Migración.
+Un servicio que facilita la representación visual de datos complejos, ofreciendo un espacio para ingresar datos, distintas opciones de gráficos y un espacio de configuración dependiente de la opción seleccionada. Se propone realizar un “Alluvial diagram” con datos sobre las Visas otorgadas período 2018, [datos publicados por el Departamento de Extranjería y Migración](https://www.extranjeria.gob.cl/estadisticas-migratorias/).
 
 ### WORD CLOUD GENERATOR 
 https://www.jasondavies.com/wordcloud/ 
 
-Un servicio que permite generar una nube de palabras desde un texto. Se propone tomar la segunda Cuenta Pública de Piñera (2019), copiarlo y pegarlo en el espacio para texto de https://www.jasondavies.com/wordcloud/  y visualizar las 250 palabras más utilizadas.
+Un servicio que permite generar una nube de palabras desde un texto. Se propone tomar [la segunda Cuenta Pública de Piñera (2019)](https://prensa.presidencia.cl/discurso.aspx?id=96642), copiarlo y pegarlo en el espacio para texto de https://www.jasondavies.com/wordcloud/  y visualizar las 250 palabras más utilizadas.
 
 - - - - - - - - -
 
@@ -50,24 +50,22 @@ https://datavizcatalogue.com/ES/
 
 Este es un proyecto doble, con una biblioteca de diferentes técnicas de visualización y un blog, ambos desarrollados por Severino Ribecca; su biblioteca puede explorarse de dos maneras:
 
-- a través de búsqueda por función: ¿Qué se desea mostrar?
+- a través de [búsqueda por función](https://datavizcatalogue.com/ES/buscar.html): ¿Qué se desea mostrar?
 
-- a través de listas, que agrupan: Gráficos/Tramas, Diagramas, Tablas, Varios, Mapas/Geográficos
+- a través de [listas, que agrupan](https://datavizcatalogue.com/ES/ver_por_lista.html): Gráficos/Tramas, Diagramas, Tablas, Varios, Mapas/Geográficos
 
 ### VISUAL LITERACY
 http://www.visual-literacy.org/
 
 En la sección Books & Maps, es posible encontrar:
 
-- una tabla periódica de los métodos de visualización de datos; y
+- una [tabla periódica](http://www.visual-literacy.org/periodic_table/periodic_table.html) de los métodos de visualización de datos; y
 
-- una escalera hacia la excelencia visual 
+- una [escalera hacia la excelencia visual](http://www.visual-literacy.org/stairs_of_viz/stairs_of_viz.html) 
 
-Consultando esta tabla periódica (Lengler & Eppler, 2007), podrán aprender, por ejemplo, que un “Iceberg” es una metáfora visual (Metaphor Visualization) que puede ofrecer una vista general (Overview) de una estructura (Structure Visualization), mientras que un “Diagrama de Flujo” es una visualización de información (Information Visualization) que puede ofrecer, a la vez, vista general y detallada (Detail AND Overview) de un proceso (Process Visualization). 
+Consultando [esta tabla periódica](http://www.visual-literacy.org/periodic_table/periodic_table.html) podrán aprender, por ejemplo, que un “Iceberg” es una metáfora visual (Metaphor Visualization) que puede ofrecer una vista general (Overview) de una estructura (Structure Visualization), mientras que un “Diagrama de Flujo” es una visualización de información (Information Visualization) que puede ofrecer, a la vez, vista general y detallada (Detail AND Overview) de un proceso (Process Visualization). 
 
-En grupos, imaginen el (auto)encargo de una visualización de datos. Pónganle un título a este (auto)encargo. Luego seleccionen el tipo o método de visualización más adecuado para el caso imaginado, y justifiquen la selección con la información ofrecida en la tabla periódica y en el catálogo de visualización de datos. Para presentarlo, hagan un boceto rápido (muy rápido):
-
-Contando con una decisión informada y un boceto (como un acuerdo en papel; lo mismo a la vista de todos), podemos dar un primer paso en la escalera hacia la excelencia visual, la que nos llevará hasta una visualización de datos que podría llamar la atención, motivar hacia la comprensión y resultar (positivamente) memorable.
+> En grupos, imaginen el (auto)encargo de una visualización de datos. Pónganle un título a este (auto)encargo. Luego seleccionen el tipo o método de visualización más adecuado para el caso imaginado, y justifiquen la selección con la información ofrecida en la tabla periódica y en el catálogo de visualización de datos. Para presentarlo, hagan un boceto rápido (muy rápido). Contando con una decisión informada y un boceto (como un acuerdo en papel; lo mismo a la vista de todos), podemos dar un primer paso en la escalera hacia la excelencia visual, la que nos llevará hasta una visualización de datos que podría llamar la atención, motivar hacia la comprensión y resultar (positivamente) memorable.
 
 - - - - - - - - -
 
@@ -85,23 +83,26 @@ Podemos cambiar la representación de esta misma página escribiendo lo siguient
 
 **Para asomarse a la consola correspondiente:**
 
-Si estás usando Chrome en PC, presiona Ctrl + Shift + J. Si estás usando el mismo navegador en Mac, presiona Cmd + Alt + J
+Si usas Chrome en PC, presiona Ctrl + Shift + J. Si estás usando el mismo navegador en Mac, presiona Cmd + Alt + J
 
-Si estás usando Firefox en PC, presiona Ctrl + Shift + K. Si estás usando el mismo navegador en Mac, presiona: Cmd + Alt + K
+Si usas Firefox en PC, presiona Ctrl + Shift + K. Si estás usando el mismo navegador en Mac, presiona: Cmd + Alt + K
 
-Si estás usando Safari, presiona: Cmd + Alt + C (aunque no es recomendable seguir trabajando con este navegador web, descarga uno de los anteriores)
+Si usas Safari, presiona: Cmd + Alt + C (aunque no es recomendable seguir trabajando con este navegador web, favor descarga uno de los anteriores)
 
 ### Mapas
+
 https://leafletjs.com/
 
 Leaflet es la biblioteca de JavaScript que permite programar mapas interactivos.
 
 ### Data Driven Documents
+
 https://d3js.org/
 
 D3 es una biblioteca de JavaScript que permite visualizar datos utilizando estándares web.
 
 ### Simplificando D3.js
+
 https://d3plus.org/ · https://c3js.org/
 
 D3plus y C3 son bibliotecas de JavaScript que extienden D3.js, permitiendo la creación rápida de gráficos.
