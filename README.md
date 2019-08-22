@@ -9,9 +9,9 @@
 
 De modo práctico, vamos a revisar:
 
-- herramientas en línea para prototipar visualizaciones de datos (9.30 a 10.10 hrs.);
+- herramientas en línea para prototipar visualizaciones de datos (9.40 a 10.20 hrs.);
 
-- referencias en línea para definir el tipo de visualización de datos pertinente según su función comunicacional (10.10 a 10.50 hrs.); y
+- referencias en línea para definir el tipo de visualización de datos pertinente según su función comunicacional (10.20 a 10.50 hrs.); y
 
 - bibliotecas de JavaScript para la visualización de datos, con énfasis en D3.js (11.00 a 12.50 hrs.)
 
