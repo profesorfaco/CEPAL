@@ -79,7 +79,7 @@ Estas modificaciones no implican cambios del código fuente con el que se descri
 
 Podemos cambiar la representación de esta misma página escribiendo lo siguiente en la Consola de JavaScript del Navegador Web* que estén utilizando:
 
-`document.write(“bye!”);`
+`document.write("bye!");`
 
 **Para asomarse a la consola correspondiente:**
 
