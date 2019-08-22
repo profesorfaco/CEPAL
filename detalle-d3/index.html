@@ -1,26 +1,30 @@
 <!doctype html>
 <html lang="es">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>SVG a secas</title>
-  <link rel="stylesheet" href="estilo.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SVG a secas</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
-<nav>
-  <select onchange="window.location=this.options[this.selectedIndex].value">
-    <option value="index.html" selected>SVG a secas</option>
-    <option value="opcion-1.html">SVG con D3.js</option>
-    <option value="opcion-2.html">SVG con D3.js y variables</option>
-    <option value="opcion-3.html">SVG con D3.js y data</option>
-  </select>
-</nav>
-<!--Mucha atención con el elemento que sigue-->
-<svg width="400" height="400" style="background-color: silver;">
-  <circle cx="100" cy="200" r="50" fill="yellow"></circle>
-  <text x="100" y="300" text-anchor="middle" fill="gray">BRASIL</text>
-  <circle cx="300" cy="200" r="40" fill="blue"></circle>
-  <text x="300" y="300" text-anchor="middle" fill="gray">ITALIA</text>
-</svg>
+    <nav>
+        <select onchange="window.location=this.options[this.selectedIndex].value">
+            <option value="index.html" selected>SVG a secas</option>
+            <option value="opcion-1.html">SVG con D3.js</option>
+            <option value="opcion-2.html">SVG con D3.js + variables</option>
+            <option value="opcion-3.html">SVG con D3.js + JSON</option>
+            <option value="opcion-4.html">SVG con D3.js + API</option>
+        </select>
+    </nav>
+    <!--Mucha atención con el elemento que sigue-->
+    <svg width="400" height="400" style="background-color: silver;">
+        <circle cx="100" cy="200" r="50" fill="yellow"></circle>
+        <text x="100" y="300" text-anchor="middle" fill="gray">BRASIL</text>
+        <circle cx="300" cy="200" r="40" fill="blue"></circle>
+        <text x="300" y="300" text-anchor="middle" fill="gray">ITALIA</text>
+    </svg>
 </body>
+
 </html>
