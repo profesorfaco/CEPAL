@@ -1,12 +1,11 @@
 # CEPAL | visualización de datos
 
-#### Jueves 22 de agosto, 2019
-
 | Felipe Cortez            |  Ricardo Vega           |
 |:-------------------------|:------------------------|
 | profesor@faco.cl         | rivegam@uc.cl           |
 | http://profesor.faco.cl/ | http://www.ricardov.cl/ | 
 
+**Jueves 22 de agosto, 2019**
 
 De modo práctico, vamos a presentar:
 
